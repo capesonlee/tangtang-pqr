@@ -1,0 +1,10 @@
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Debug\MeixingApplication.exe.config
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Debug\MeixingApplication.exe
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Debug\MeixingApplication.pdb
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Debug\MeixingApplication.csprojResolveAssemblyReference.cache
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Debug\MeixingApplication.Properties.Resources.resources
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Debug\MeixingApplication.csproj.GenerateResource.Cache
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Debug\MeixingApplication.exe
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Debug\MeixingApplication.pdb
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Debug\MeixingApplication.main.resources
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Debug\ThoughtWorks.QRCode.dll

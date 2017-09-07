@@ -1,0 +1,14 @@
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.exe.config
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.exe
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.pdb
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\ThoughtWorks.QRCode.dll
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.main.resources
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.Properties.Resources.resources
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.csproj.GenerateResource.Cache
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.exe
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.pdb
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.exe.manifest
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.application
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.csprojResolveAssemblyReference.cache
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.exe.manifest
+E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.application
