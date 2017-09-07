@@ -34,14 +34,11 @@ namespace MeixingApplication
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnPreview_Click(object sender, EventArgs e)
         {
-
+            
             this.printPreviewControl.Document = this.docToPrint;
            
         }
@@ -50,7 +47,9 @@ namespace MeixingApplication
         {
 
             PrintDocument pdoc = new PrintDocument();
+            pdoc.PrinterSettings.Copies = Convert.ToInt16(this.txtCopies.Text);
             pdoc.PrintPage += new PrintPageEventHandler(docToPrint_PrintPage);
+            
             pdoc.Print();
 
             //this.docToPrint += new PrintPageEventHandler(docToPrint_PrintPage);
@@ -110,9 +109,14 @@ namespace MeixingApplication
 
             Bitmap bt;
 
-            string enCodeString = this.txtPeriod.Text;
+            string enCodeString =this.lblName.Text + this.txtName.Text +"\r\n"
+                                 + this.lblModel.Text + this.txtModel.Text + "\r\n"
+                                 + this.lblCode.Text + this.txtCode.Text + "\r\n"
+                                 + this.lblAddress.Text + this.txtAddress.Text + "\r\n"
+                                 +  this.txtPeriod.Text;
 
             QRCodeEncoder qrCodeEncoder = new QRCodeEncoder();
+            qrCodeEncoder.QRCodeVersion = 0;
 
             bt = qrCodeEncoder.Encode(enCodeString, Encoding.UTF8);
 
@@ -121,8 +125,18 @@ namespace MeixingApplication
             Rectangle test = new Rectangle(0, 0, PRINT_WIDTH, PRINT_HEIGHT);
             g.DrawRectangle(pen, test);
             g.DrawImage(bt,15,35,135,135);
-          
+
         }
+
+        private void txtCopies_Pressed(object sender, KeyPressEventArgs e)
+        {
+            if( (!Char.IsNumber(e.KeyChar)) && e.KeyChar !=(Char)8)
+            {
+                e.Handled = true;
+            }
+        }
+
+      
 
      
 

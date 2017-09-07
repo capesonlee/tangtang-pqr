@@ -12,3 +12,16 @@ E:\phabricator\winapp\MeixingApplication\MeixingApplication\bin\Release\MeixingA
 E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.csprojResolveAssemblyReference.cache
 E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.exe.manifest
 E:\phabricator\winapp\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.application
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.exe.config
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.exe
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.pdb
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.exe.manifest
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.application
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.exe
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\bin\Release\MeixingApplication.pdb
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\bin\Release\ThoughtWorks.QRCode.dll
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.main.resources
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.Properties.Resources.resources
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.csproj.GenerateResource.Cache
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.exe.manifest
+E:\phabricator\tangtang-pqr\MeixingApplication\MeixingApplication\obj\Release\MeixingApplication.application

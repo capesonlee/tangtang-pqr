@@ -43,6 +43,8 @@
             this.btnPreview = new System.Windows.Forms.Button();
             this.printPreviewControl = new System.Windows.Forms.PrintPreviewControl();
             this.docToPrint = new System.Drawing.Printing.PrintDocument();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCopies = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblName
@@ -53,7 +55,6 @@
             this.lblName.Size = new System.Drawing.Size(41, 12);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "名称：";
-            this.lblName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblModel
             // 
@@ -128,6 +129,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(12, 16);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(491, 162);
@@ -141,12 +143,13 @@
             this.btnPrint.TabIndex = 11;
             this.btnPrint.Text = "打印";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnPreview
             // 
-            this.btnPreview.Location = new System.Drawing.Point(716, 155);
+            this.btnPreview.Location = new System.Drawing.Point(677, 155);
             this.btnPreview.Name = "btnPreview";
-            this.btnPreview.Size = new System.Drawing.Size(75, 23);
+            this.btnPreview.Size = new System.Drawing.Size(82, 23);
             this.btnPreview.TabIndex = 12;
             this.btnPreview.Text = "预览";
             this.btnPreview.UseVisualStyleBackColor = true;
@@ -156,7 +159,7 @@
             // 
             this.printPreviewControl.Location = new System.Drawing.Point(12, 193);
             this.printPreviewControl.Name = "printPreviewControl";
-            this.printPreviewControl.Size = new System.Drawing.Size(521, 235);
+            this.printPreviewControl.Size = new System.Drawing.Size(491, 271);
             this.printPreviewControl.TabIndex = 13;
             // 
             // docToPrint
@@ -164,11 +167,31 @@
             this.docToPrint.DocumentName = "docToPrint";
             this.docToPrint.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.docToPrint_PrintPage);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(567, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "打印份数：";
+            // 
+            // txtCopies
+            // 
+            this.txtCopies.Location = new System.Drawing.Point(648, 86);
+            this.txtCopies.Name = "txtCopies";
+            this.txtCopies.Size = new System.Drawing.Size(100, 21);
+            this.txtCopies.TabIndex = 15;
+            this.txtCopies.Text = "1";
+            this.txtCopies.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCopies_Pressed);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 440);
+            this.ClientSize = new System.Drawing.Size(909, 476);
+            this.Controls.Add(this.txtCopies);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.printPreviewControl);
             this.Controls.Add(this.btnPreview);
             this.Controls.Add(this.btnPrint);
@@ -208,6 +231,8 @@
         private System.Windows.Forms.Button btnPreview;
         private System.Windows.Forms.PrintPreviewControl printPreviewControl;
         private System.Drawing.Printing.PrintDocument docToPrint;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCopies;
     }
 }
 
