@@ -25,12 +25,14 @@ namespace MeixingApplication
             int height = PRINT_HEIGHT;
             //this.docToPrint.DefaultPageSettings.Margins = new Margins(margin, margin, margin, margin, margin);
             this.docToPrint.DefaultPageSettings.PaperSize = new PaperSize("Custum", width, height);
-            
+
+            this.txtCompanyName.Text = "上海美星电子公司";
             this.txtName.Text = "电烤箱";
             this.txtModel.Text = "ST--120B";
             this.txtCode.Text = "K-045";
             this.txtAddress.Text = "上海一车间在用";
             this.txtPeriod.Text = "2015年12月31日到2016年12月31日";
+            this.txtUrl.Text = "http://zc.meixingcorp.com/?id=K-045";
             
         }
 
@@ -63,7 +65,7 @@ namespace MeixingApplication
             Font fontSmall = new Font("仿宋", 10, FontStyle.Regular);
             Brush bru = Brushes.Black;
             Graphics g = e.Graphics;   //先建立画布 
-            String companyName = "上海美星电子有限公司";
+            String companyName = this.txtCompanyName.Text;
             
             int x = 10;
             int y = 5;
@@ -102,29 +104,37 @@ namespace MeixingApplication
 
             /*--------------------------------------------------------*/
             x = 10;
-            y += 30;
+            y += 25;
             g.DrawString(this.lblPeriod.Text, fontSmall, bru, x, y);
             x += 55;
             g.DrawString(this.txtPeriod.Text, fontSmall, bru, x, y);
 
             Bitmap bt;
 
-            string enCodeString =this.lblName.Text + this.txtName.Text +"\r\n"
-                                 + this.lblModel.Text + this.txtModel.Text + "\r\n"
-                                 + this.lblCode.Text + this.txtCode.Text + "\r\n"
-                                 + this.lblAddress.Text + this.txtAddress.Text + "\r\n"
-                                 +  this.txtPeriod.Text;
+            string enCodeString = this.txtUrl.Text;
+            if (String.IsNullOrWhiteSpace(enCodeString))
+            {
+                enCodeString = "该设备没有网站来源";
+            }
 
             QRCodeEncoder qrCodeEncoder = new QRCodeEncoder();
             qrCodeEncoder.QRCodeVersion = 0;
 
             bt = qrCodeEncoder.Encode(enCodeString, Encoding.UTF8);
+            g.DrawImage(bt, 15, 35, 135, 135);
 
-          
-            Pen pen = new Pen(bru,1);
-            Rectangle test = new Rectangle(0, 0, PRINT_WIDTH, PRINT_HEIGHT);
-            g.DrawRectangle(pen, test);
-            g.DrawImage(bt,15,35,135,135);
+            
+            /*****************测试代码**************************************/
+            //Pen pen = new Pen(bru,1);
+            //Rectangle test = new Rectangle(0, 0, PRINT_WIDTH, PRINT_HEIGHT);
+            //g.DrawRectangle(pen, test);
+
+            /*****************水印**************************************/
+
+            Font fontTest = new Font("仿宋", 20, FontStyle.Underline);
+            g.DrawString("这个标签仅用于测试", fontSmall, Brushes.Red, 150, 20);
+  
+ 
 
         }
 

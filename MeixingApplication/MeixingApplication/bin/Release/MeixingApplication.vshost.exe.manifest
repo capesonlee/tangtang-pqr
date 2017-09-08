@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MeixingApplication.exe" size="12800">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MeixingApplication.exe" size="13824">
       <assemblyIdentity name="MeixingApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cSxpcOxQdvnt057Zt/3gHeT49IAMHO0hqVaOzrc0S4g=</dsig:DigestValue>
+        <dsig:DigestValue>qfhd+1yWYlZ7PBOlvNeRqUe8OuttUZHqmxiEoQiQT7o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
